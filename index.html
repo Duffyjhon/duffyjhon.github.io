@@ -1,90 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>João Vitor Mendonça | Portfólio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
 
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 920px; margin: 0 auto; padding: 28px; line-height: 1.6; }
+    header { margin-bottom: 22px; }
+    .btn { display:inline-block; margin: 6px 8px 0 0; padding: 10px 14px; border-radius: 10px; background:#2563eb; color:#fff; text-decoration:none; font-weight:700; }
+    .btn:hover { opacity: .92; }
+    h1 { margin: 0 0 6px 0; }
+    .muted { color:#475569; margin: 0 0 14px 0; }
+    section { margin-top: 24px; }
+    .card { border: 1px solid #e2e8f0; border-radius: 14px; padding: 16px; margin-top: 12px; }
+    .tags { color:#475569; font-size: 0.95rem; margin: 8px 0 0; }
+    footer { margin-top: 28px; color:#64748b; }
+  </style>
+</head>
+
+<body>
   <header>
     <h1>João Vitor Mendonça</h1>
-    <p>Desenvolvedor em formação | JavaScript • Python • C</p>
+    <p class="muted">Dev em formação | JavaScript • Python • C</p>
+
+    <a class="btn" href="https://github.com/Duffyjhon" target="_blank" rel="noreferrer">GitHub</a>
+    <a class="btn" href="https://www.linkedin.com/in/COLOQUE-SEU-LINK/" target="_blank" rel="noreferrer">LinkedIn</a>
+    <a class="btn" href="mailto:j.vitormend@gmail.com">Email</a>
   </header>
 
-  <main>
+  <section>
+    <h2>Sobre mim</h2>
+    <p>
+      Estudante de Análise e Desenvolvimento de Sistemas, buscando primeira oportunidade em TI.
+      Curto backend, APIs, banco de dados e deploy.
+    </p>
+  </section>
 
-    <!-- SOBRE -->
-    <section id="about">
-      <h2>Sobre mim</h2>
+  <section>
+    <h2>Projetos</h2>
+
+    <div class="card">
+      <h3>Sales Manager (Flask + PostgreSQL + JWT)</h3>
+      <p>Sistema de gestão de vendas com login, dashboard e exportação. Deploy no Render e banco PostgreSQL.</p>
+      <p class="tags">Flask • PostgreSQL • JWT • SQLAlchemy • Render</p>
       <p>
-        Estudante de Análise e Desenvolvimento de Sistemas, em busca da primeira
-        oportunidade em TI. Tenho interesse em desenvolvimento de software,
-        lógica de programação e aprendizado contínuo.
+        <a href="https://sales-manager-o4kb.onrender.com" target="_blank" rel="noreferrer">Ver demo</a>
+        &nbsp;•&nbsp;
+        <a href="https://github.com/Duffyjhon/sales-manager" target="_blank" rel="noreferrer">Ver código</a>
       </p>
-    </section>
+    </div>
 
-    <!-- PROJETOS -->
-    <section id="projects">
-      <h2>Projetos</h2>
+    <div class="card">
+      <h3>Sistema de Campeonato</h3>
+      <p>Projeto em JavaScript que simula tabela de classificação, calcula pontuação e ordena automaticamente.</p>
+      <p class="tags">JavaScript</p>
+      <p><a href="https://github.com/Duffyjhon" target="_blank" rel="noreferrer">Ver código</a></p>
+    </div>
 
-      <div class="project">
-        <h3>Sistema de Campeonato</h3>
-        <p>
-          Projeto desenvolvido em JavaScript que simula a tabela de classificação
-          de um campeonato, calculando pontuação e ordenando os participantes
-          automaticamente de acordo com os resultados.
-        </p>
-        <a href="https://github.com/Duffyjhon/Sistema-Campeonato" target="_blank">
-          Ver projeto no GitHub
-        </a>
-      </div>
+    <div class="card">
+      <h3>Sistema War (Estruturas de Dados)</h3>
+      <p>Projeto em C para praticar estruturas de dados e lógica, simulando o jogo War.</p>
+      <p class="tags">C • Estruturas de Dados</p>
+      <p><a href="https://github.com/Duffyjhon" target="_blank" rel="noreferrer">Ver código</a></p>
+    </div>
+  </section>
 
-      <div class="project">
-        <h3>Site Responsivo</h3>
-        <p>
-          Website desenvolvido com HTML, CSS e JavaScript, focado em
-          responsividade e boas práticas de layout.
-        </p>
-        <a href="site-responsivo.html">Site Responsivo</a>
+  <section>
+    <h2>Contato</h2>
+    <p>Email: <a href="mailto:j.vitormend@gmail.com">j.vitormend@gmail.com</a></p>
+  </section>
 
-          Ver projeto no GitHub
-        </a>
-      </div>
-
-      <div class="project">
-        <h3>Sistema War (Estruturas de Dados)</h3>
-        <p>
-          Projeto desenvolvido em linguagem C para praticar estruturas de dados
-          e lógica de programação, simulando o jogo War.
-        </p>
-        <a href="https://github.com/EstruturaDados/war-Duffyjhon" target="_blank">
-          Ver projeto no GitHub
-        </a>
-      </div>
-
-    </section>
-
-    <!-- CONTATO -->
-    <section id="contact">
-      <h2>Contato</h2>
-      <p>Email: j.vitormend@gmail.com</p>
-      <p>
-        <a href="https://github.com/Duffyjhon" target="_blank">GitHub</a> |
-        <a href="https://linkedin.com/in/joaovitor-mendonca-dev" target="_blank">
-          LinkedIn
-        </a>
-      </p>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>© 2026 João Vitor Mendonça</p>
-  </footer>
-
+  <footer>© 2026 João Vitor Mendonça</footer>
 </body>
 </html>
-
-
