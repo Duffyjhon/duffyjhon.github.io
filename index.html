@@ -1,76 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>João Vitor Mendonça | Portfólio</title>
-
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 920px; margin: 0 auto; padding: 28px; line-height: 1.6; }
-    header { margin-bottom: 22px; }
-    .btn { display:inline-block; margin: 6px 8px 0 0; padding: 10px 14px; border-radius: 10px; background:#2563eb; color:#fff; text-decoration:none; font-weight:700; }
-    .btn:hover { opacity: .92; }
-    h1 { margin: 0 0 6px 0; }
-    .muted { color:#475569; margin: 0 0 14px 0; }
-    section { margin-top: 24px; }
-    .card { border: 1px solid #e2e8f0; border-radius: 14px; padding: 16px; margin-top: 12px; }
-    .tags { color:#475569; font-size: 0.95rem; margin: 8px 0 0; }
-    footer { margin-top: 28px; color:#64748b; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>João Vitor | Backend Developer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header>
-    <h1>João Vitor Mendonça</h1>
-    <p class="muted">Dev em formação | JavaScript • Python • C</p>
 
-    <a class="btn" href="https://github.com/Duffyjhon" target="_blank" rel="noreferrer">GitHub</a>
-    <a class="btn" href="https://www.linkedin.com/in/COLOQUE-SEU-LINK/" target="_blank" rel="noreferrer">LinkedIn</a>
-    <a class="btn" href="mailto:j.vitormend@gmail.com">Email</a>
-  </header>
+<header>
+  <div class="container nav">
+    <h2>João Vitor</h2>
 
-  <section>
-    <h2>Sobre mim</h2>
-    <p>
-      Estudante de Análise e Desenvolvimento de Sistemas, buscando primeira oportunidade em TI.
-      Curto backend, APIs, banco de dados e deploy.
+    <div class="nav-right">
+      <nav>
+        <a href="#projeto">Projeto</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <!-- Toggle tema -->
+      <button id="themeToggle" class="theme-btn" type="button" aria-label="Alternar tema">
+        <span id="themeIcon" aria-hidden="true">🌙</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Desenvolvedor Backend focado em APIs e Deploy em Produção</h1>
+    <p>Python • Flask • PostgreSQL • JWT • Render</p>
+
+    <a href="https://sales-manager-o4kb.onrender.com" target="_blank" rel="noreferrer" class="btn">
+      Ver Projeto Principal
+    </a>
+  </div>
+</section>
+
+<section id="projeto" class="projeto">
+  <div class="container">
+    <h2>📊 Sales Manager</h2>
+    <p class="desc">
+      Sistema full stack com autenticação JWT, PostgreSQL em produção e dashboard com métricas mensais e crescimento percentual.
     </p>
-  </section>
 
-  <section>
-    <h2>Projetos</h2>
+    <div class="features">
+      <div>
+        <h3>Backend</h3>
+        <ul>
+          <li>API REST com Flask</li>
+          <li>JWT Authentication</li>
+          <li>PostgreSQL</li>
+          <li>Arquitetura em camadas</li>
+        </ul>
+      </div>
 
-    <div class="card">
-      <h3>Sales Manager (Flask + PostgreSQL + JWT)</h3>
-      <p>Sistema de gestão de vendas com login, dashboard e exportação. Deploy no Render e banco PostgreSQL.</p>
-      <p class="tags">Flask • PostgreSQL • JWT • SQLAlchemy • Render</p>
-      <p>
-        <a href="https://sales-manager-o4kb.onrender.com" target="_blank" rel="noreferrer">Ver demo</a>
-        &nbsp;•&nbsp;
-        <a href="https://github.com/Duffyjhon/sales-manager" target="_blank" rel="noreferrer">Ver código</a>
-      </p>
+      <div>
+        <h3>Funcionalidades</h3>
+        <ul>
+          <li>CRUD completo</li>
+          <li>Dashboard inteligente</li>
+          <li>Exportação PDF/Excel</li>
+          <li>Tema escuro</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="card">
-      <h3>Sistema de Campeonato</h3>
-      <p>Projeto em JavaScript que simula tabela de classificação, calcula pontuação e ordena automaticamente.</p>
-      <p class="tags">JavaScript</p>
-      <p><a href="https://github.com/Duffyjhon" target="_blank" rel="noreferrer">Ver código</a></p>
+    <div class="links">
+      <a href="https://sales-manager-o4kb.onrender.com" target="_blank" rel="noreferrer">🔗 Ver Demo</a>
+      <a href="https://github.com/Duffyjhon/sales-manager" target="_blank" rel="noreferrer">💻 Ver Código</a>
     </div>
+  </div>
+</section>
 
-    <div class="card">
-      <h3>Sistema War (Estruturas de Dados)</h3>
-      <p>Projeto em C para praticar estruturas de dados e lógica, simulando o jogo War.</p>
-      <p class="tags">C • Estruturas de Dados</p>
-      <p><a href="https://github.com/Duffyjhon" target="_blank" rel="noreferrer">Ver código</a></p>
-    </div>
-  </section>
-
-  <section>
+<section id="contato" class="contato">
+  <div class="container">
     <h2>Contato</h2>
     <p>Email: <a href="mailto:j.vitormend@gmail.com">j.vitormend@gmail.com</a></p>
-  </section>
+    <p>
+      <a href="https://www.linkedin.com/in/joaovitor-mendonca-dev/" target="_blank" rel="noreferrer">LinkedIn</a> |
+      <a href="https://github.com/Duffyjhon" target="_blank" rel="noreferrer">GitHub</a>
+    </p>
+  </div>
+</section>
 
-  <footer>© 2026 João Vitor Mendonça</footer>
+<footer>
+  <p>© <span id="year"></span> João Vitor Mendonça</p>
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
 </body>
 </html>
